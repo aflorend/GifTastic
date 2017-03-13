@@ -42,7 +42,7 @@ $('.btn').on('click', function() {
 
 	var limit = 10;
 
-	var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&limit=" + limit + "&api_key=" + APIkey;
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&limit=" + limit + "&api_key=" + APIkey;
 
 	$.ajax({
 		url: queryURL,
