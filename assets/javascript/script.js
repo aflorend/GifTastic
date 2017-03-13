@@ -75,7 +75,7 @@ $('.btn').on('click', function() {
 	})
 });
 
-$(document).on('click', '.gifClick', function() {
+$('body').on('click', '.gifClick', function() {
 
 	var animatedGif = $(this).attr('animated-gif');
 
