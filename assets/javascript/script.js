@@ -72,24 +72,24 @@ $('.btn').on('click', function() {
 			.attr('animated-gif', animation)
 			.attr('still-gif', still)			
 		}
-	})
-});
 
-$('body').on('click', '.gifClick', function() {
+		$('.gifClick').on('click', function() {
 
-	var animatedGif = $(this).attr('animated-gif');
+			var animatedGif = $(this).attr('animated-gif');
 
-	var stillGif = $(this).attr('still-gif');
+			var stillGif = $(this).attr('still-gif');
 
-	var gifState = $(this).attr('state');
+			var gifState = $(this).attr('state');
 
 
-// Changes state and src if still or animated
-	if (gifState === 'still') {
-		$(this).attr('src', animatedGif);
-		$(this).attr('state', 'animated')
-	} else {
-		$(this).attr('src', stillGif);
-		$(this).attr('state', 'still')
-	};
+			// Changes state and src if still or animated
+			if (gifState === 'still') {
+				$(this).attr('src', animatedGif);
+				$(this).attr('state', 'animated')
+			} else {
+				$(this).attr('src', stillGif);
+				$(this).attr('state', 'still')
+			};
+		});
+	});
 });
